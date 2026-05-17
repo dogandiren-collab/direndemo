@@ -145,7 +145,7 @@ export default function LandingPage() {
             >
               <span className="relative z-10 flex items-center gap-3">
                 <Sparkles size={24} />
-                Garibanometreye Gir
+                Garibanometreyi Başlat
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-faded-orange via-dirty-gold to-ironic-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.button>
@@ -380,7 +380,7 @@ export default function LandingPage() {
             >
               <span className="flex items-center gap-2">
                 <Star size={22} />
-                Hadi Başlayalım
+                Garibanometreyi Başlat
               </span>
             </motion.button>
           </Link>
