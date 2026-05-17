@@ -12,7 +12,7 @@ const dertBabasiReplies = [
   "\"Acıların kadın olanı arar da sormaz beni\" — Müslüm Baba",
   "Abicim bi çay daha koy, çay varsa dert yoktur.",
   "\"Yorgun bıraktın beni hayat\" — Ahmet Kaya",
-  "Sana bi hikaye anlatayım... Vaktiyle bi adam varmış, o da direndı. Sonu mu? Hâlâ diren.",
+  "Sana bi hikaye anlatayım... Vaktiyle bi adam varmış, o da garibandı. Sonu mu? Hâlâ gariban.",
   "Bak kardeşim, dünya yuvarlak. Bugün sen ağlarsın, yarın da sen ağlarsın.",
   "\"Beni kovma kapından, garip seninle bir olsun\" — Neşet Ertaş",
   "Bi sigara yakayım, sen anlat. Dinliyorum seni.",
@@ -20,8 +20,8 @@ const dertBabasiReplies = [
   "\"İtirazım var bu gidişata\" — Müslüm Gürses. Benim de var abi.",
   "Bu hayat bizim neyimize? Ama çay güzel, çay içelim.",
   "\"Her şeyi yak, kül et, ama çaydanlığa dokunma\" — Mahalle Filozofu",
-  "Kardeşim sen diren değilsin, sen bir sanat eserisin. Acı çeken türden.",
-  "Bak abicim, para gelir gider. Ama direnlık kalıcıdır.",
+  "Kardeşim sen gariban değilsin, sen bir sanat eserisin. Acı çeken türden.",
+  "Bak abicim, para gelir gider. Ama garibanlık kalıcıdır.",
   "\"Gözlerimin önünden gitme\" — ben bunu eski sevgiliye de dedim, dinlemedi.",
 ];
 
@@ -30,7 +30,7 @@ const botReplies = [
   "Şu an çok fena Müslüm dinliyorum, sonra yazsam?",
   "Aynen kardeşim aynen...",
   "Düştük yine bir derde.",
-  "Senin direnlık seviyen bana yetmez.",
+  "Senin garibanlık seviyen bana yetmez.",
   "Nasipte varsa...",
   "Bana çorba ısmarlarsan düşünürüm.",
   "Kader ağlarını örüyor gibi hissettim.",
@@ -142,7 +142,7 @@ export default function ChatPage() {
           >
             <div className="p-4 sm:p-6 pt-6 sm:pt-8 safe-top">
               <h1 className="text-2xl font-[var(--font-heading)] font-bold text-gradient-gold mb-2">Sohbetler</h1>
-              <p className="text-text-secondary text-sm">Dertleştiğin Direnlar</p>
+              <p className="text-text-secondary text-sm">Dertleştiğin Garibanlar</p>
             </div>
 
             <div className="flex-1 overflow-y-auto px-4 sm:px-6 pb-24">
@@ -188,7 +188,7 @@ export default function ChatPage() {
                       <p className="text-xs text-text-secondary truncate pr-4">
                         {profile.id === 'dert-babasi'
                           ? 'Dertlerin varsa anlat, yoksa çay koyalım.'
-                          : i === 1 ? 'Çay içer miyiz?' : 'Senin direnlık seviyen bana yetmez.'}
+                          : i === 1 ? 'Çay içer miyiz?' : 'Senin garibanlık seviyen bana yetmez.'}
                       </p>
                       {(profile.id === 'dert-babasi' || i === 1) && (
                         <div className={`w-2 h-2 rounded-full shrink-0 ${

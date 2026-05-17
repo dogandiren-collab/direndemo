@@ -53,7 +53,7 @@ export default function LeaderboardPage() {
           </div>
           <h1 className="text-2xl sm:text-3xl font-[var(--font-heading)] font-bold text-gradient-gold mb-2">Şehir Ligleri</h1>
           <p className="text-text-secondary text-sm max-w-xs mx-auto">
-            Hangi şehrin aurası daha diren? Kendi bölgende kaçıncı sıradasın?
+            Hangi şehrin aurası daha gariban? Kendi bölgende kaçıncı sıradasın?
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function LeaderboardPage() {
           <div className="flex items-center justify-between px-6 py-4 bg-white/[0.02] border-b border-white/5 text-xs font-bold text-text-muted uppercase tracking-wider">
             <div className="flex gap-8">
               <span>Sıra</span>
-              <span>Diren</span>
+              <span>Gariban</span>
             </div>
             <span>Skor</span>
           </div>

@@ -3,7 +3,7 @@
 import { motion, useMotionValue, useTransform, AnimatePresence, PanInfo } from 'framer-motion';
 import { useState, useCallback } from 'react';
 import { mockProfiles, Profile } from '@/data/profiles';
-import { direnTitles } from '@/data/questions';
+import { garibanTitles } from '@/data/questions';
 import { Heart, X, Soup, Sparkles, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import BottomNav from '@/components/BottomNav';
@@ -30,7 +30,7 @@ function SwipeCard({
     }
   };
 
-  const titleInfo = direnTitles[profile.titleKey] || { title: profile.titleKey, emoji: '🫠' };
+  const titleInfo = garibanTitles[profile.titleKey] || { title: profile.titleKey, emoji: '🫠' };
 
   return (
     <motion.div
@@ -129,7 +129,7 @@ function SwipeCard({
             </div>
             <div className="text-center">
               <div className="text-xs text-muted-blue font-bold">{profile.score}</div>
-              <div className="text-[9px] text-text-muted">Diren Skoru</div>
+              <div className="text-[9px] text-text-muted">Gariban Skoru</div>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ function MatchOverlay({ profile, onClose }: { profile: Profile; onClose: () => v
           transition={{ delay: 0.9 }}
           className="text-text-secondary text-sm mb-8"
         >
-          İki diren bir araya geldi.
+          İki gariban bir araya geldi.
           <br />
           <span className="text-dirty-gold">{profile.name}</span> ile eşleştin!
         </motion.p>
@@ -294,7 +294,7 @@ export default function SwipePage() {
                 Şimdilik bu kadar
               </h2>
               <p className="text-text-secondary text-sm mb-6">
-                Yeni direnlar geldiğinde bildirim alacaksın
+                Yeni garibanlar geldiğinde bildirim alacaksın
               </p>
               <Link href="/feed">
                 <button className="glass px-6 py-3 text-dirty-gold text-sm font-medium hover:bg-white/[0.06] transition-all">

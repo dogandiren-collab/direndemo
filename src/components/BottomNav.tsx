@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 interface BottomNavProps {
-  active: 'feed' | 'swipe' | 'chat' | 'profile' | 'leaderboard';
+  active: 'feed' | 'swipe' | 'chat' | 'profile' | 'leaderboard' | 'game';
 }
 
 export default function BottomNav({ active }: BottomNavProps) {
@@ -13,6 +13,7 @@ export default function BottomNav({ active }: BottomNavProps) {
     { id: 'swipe', label: 'Eşleş', emoji: '💫', href: '/swipe' },
     { id: 'chat', label: 'Sohbet', emoji: '💬', href: '/chat' },
     { id: 'leaderboard', label: 'Lig', emoji: '🏆', href: '/leaderboard' },
+    { id: 'game', label: 'Oyun', emoji: '🎮', href: '/game' },
     { id: 'profile', label: 'Profil', emoji: '👤', href: '/profile' },
   ];
 

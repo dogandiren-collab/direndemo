@@ -20,9 +20,9 @@ const categoryEmojis: Record<string, string> = {
 };
 
 const categoryLabels: Record<string, string> = {
-  financial: 'Finansal Diren',
-  emotional: 'Duygusal Diren',
-  social: 'Sosyal Diren',
+  financial: 'Finansal Gariban',
+  emotional: 'Duygusal Gariban',
+  social: 'Sosyal Gariban',
 };
 
 export default function TestPage() {
@@ -205,10 +205,10 @@ export default function TestPage() {
       <div className="relative z-10 p-6 flex flex-col items-center gap-4 pb-safe">
         <p className="text-text-muted text-xs">
           {currentIndex < 5
-            ? '💸 Finansal diren seviyeni ölçüyoruz...'
+            ? '💸 Finansal gariban seviyeni ölçüyoruz...'
             : currentIndex < 10
             ? '💔 Duygusal hasar seviyeni ölçüyoruz...'
-            : '🫠 Sosyal diren seviyeni ölçüyoruz...'}
+            : '🫠 Sosyal gariban seviyeni ölçüyoruz...'}
         </p>
       </div>
     </main>

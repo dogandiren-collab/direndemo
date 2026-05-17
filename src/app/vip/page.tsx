@@ -28,7 +28,7 @@ const features = [
   { icon: <Palette size={20} />, title: 'Profil Glow Efektleri', desc: 'Profiline sinematik parıltı ekle' },
   { icon: <Eye size={20} />, title: 'Gizli Hayranlar', desc: 'Seni beğenenleri gör' },
   { icon: <Shield size={20} />, title: 'Sinematik Profil Temaları', desc: 'Özel profil arka planları ve temalar' },
-  { icon: <Star size={20} />, title: 'VIP Diren Rozeti', desc: 'Profilinde ironic lüks altın rozet' },
+  { icon: <Star size={20} />, title: 'VIP Gariban Rozeti', desc: 'Profilinde ironic lüks altın rozet' },
 ];
 
 const plans = [
@@ -39,7 +39,7 @@ const plans = [
 
 const rejectMessages = [
   { title: 'BANKA RED: YETERSİZ BAKİYE', subtitle: 'İşlem Reddedildi', emoji: '💳❌' },
-  { title: 'SEN KİM VIP OLMAK KİM?', subtitle: 'Diren kal, güzel kal.', emoji: '👑🚫' },
+  { title: 'SEN KİM VIP OLMAK KİM?', subtitle: 'Gariban kal, güzel kal.', emoji: '👑🚫' },
   { title: 'KREDİ KARTI LİMİTİN: 0 TL', subtitle: 'Sürpriz değil aslında.', emoji: '📉💀' },
   { title: 'BANKA MESAJI: LOL', subtitle: 'Bankan bile gülüyor sana.', emoji: '🏦😂' },
 ];
@@ -93,7 +93,7 @@ export default function VipPage() {
               </Link>
               <div className="flex items-center gap-2">
                 <Crown size={20} className="text-ironic-gold" />
-                <span className="font-[var(--font-heading)] font-bold text-gradient-gold">VIP Diren</span>
+                <span className="font-[var(--font-heading)] font-bold text-gradient-gold">VIP Gariban</span>
               </div>
               <div className="w-5" />
             </div>
@@ -105,7 +105,7 @@ export default function VipPage() {
                   👑
                 </motion.div>
                 <h1 className="text-3xl font-[var(--font-heading)] font-bold mb-3">
-                  <span className="text-gradient-gold">VIP Diren</span>
+                  <span className="text-gradient-gold">VIP Gariban</span>
                 </h1>
                 <p className="text-text-secondary text-sm italic max-w-xs mx-auto">
                   &ldquo;Zengin değilsin ama ruhun VIP. <br/>Bu da bir şey.&rdquo;
@@ -114,7 +114,7 @@ export default function VipPage() {
 
               {/* Features */}
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="mb-10">
-                <h2 className="text-sm text-text-muted uppercase tracking-wider mb-4 text-center">Premium Diren Özellikleri</h2>
+                <h2 className="text-sm text-text-muted uppercase tracking-wider mb-4 text-center">Premium Gariban Özellikleri</h2>
                 <div className="grid grid-cols-2 gap-3">
                   {features.map((feature, i) => (
                     <motion.div key={i} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 + i * 0.05 }} className="glass-card p-4 group hover:border-dirty-gold/20 transition-all">
@@ -163,9 +163,9 @@ export default function VipPage() {
                   className="w-full py-4 bg-gradient-to-r from-dirty-gold via-ironic-gold to-dirty-gold rounded-2xl text-bg-dark font-bold text-lg flex items-center justify-center gap-2 glow-gold"
                 >
                   <Crown size={20} />
-                  VIP Diren Ol
+                  VIP Gariban Ol
                 </motion.button>
-                <p className="text-center text-[10px] text-text-muted mt-3">İstediğin zaman iptal edebilirsin. Diren kalbin değişmez.</p>
+                <p className="text-center text-[10px] text-text-muted mt-3">İstediğin zaman iptal edebilirsin. Gariban kalbin değişmez.</p>
               </motion.div>
             </div>
           </motion.div>
@@ -178,7 +178,7 @@ export default function VipPage() {
               <div className="text-center mb-8">
                 <div className="text-5xl mb-3">💳</div>
                 <h2 className="text-2xl font-[var(--font-heading)] font-bold text-gradient-gold mb-2">Ödeme Bilgileri</h2>
-                <p className="text-text-secondary text-sm">VIP Diren olmak için kartını gir</p>
+                <p className="text-text-secondary text-sm">VIP Gariban olmak için kartını gir</p>
               </div>
 
               <div className="glass-strong rounded-[24px] p-6 space-y-5 border border-dirty-gold/20">
@@ -251,7 +251,7 @@ export default function VipPage() {
                 ERROR ERROR ERROR<br/>
                 SYSTEM_CRASH<br/>
                 BAKIYE_NOT_FOUND<br/>
-                DIREN_DETECTED
+                GARIBAN_DETECTED
               </div>
             </motion.div>
             {/* Scanlines */}
@@ -291,7 +291,7 @@ export default function VipPage() {
                 <p className="text-text-secondary text-sm mb-4">{rejectMsg.subtitle}</p>
                 <div className="bg-warm-neon-red/10 rounded-xl p-4 border border-warm-neon-red/20">
                   <p className="text-xs text-text-secondary italic leading-relaxed">
-                    &ldquo;Bazıları VIP olur. Bazıları Premium alır. Sen sadece dirensın. Ama bu da güzel bir şey.&rdquo;
+                    &ldquo;Bazıları VIP olur. Bazıları Premium alır. Sen sadece garibansın. Ama bu da güzel bir şey.&rdquo;
                   </p>
                 </div>
               </div>

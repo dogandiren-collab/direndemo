@@ -162,7 +162,7 @@ export default function OnboardingPage() {
                 className="w-full"
               >
                 <div className="inline-block text-5xl sm:text-8xl font-[var(--font-heading)] font-bold text-gradient-gold mt-4 text-glow-gold px-4 leading-tight">
-                  Dirensın.
+                  Garibansın.
                 </div>
               </motion.div>
 
@@ -223,7 +223,7 @@ export default function OnboardingPage() {
                   🫠
                 </motion.div>
                 <h1 className="text-3xl sm:text-4xl font-[var(--font-heading)] font-bold text-text-primary mb-3">
-                  Hoş Geldin, <span className="text-gradient-gold">Diren</span>
+                  Hoş Geldin, <span className="text-gradient-gold">Gariban</span>
                 </h1>
                 <p className="text-text-secondary text-sm">Macerana başlamak için adını gir</p>
               </div>
@@ -237,7 +237,7 @@ export default function OnboardingPage() {
                 >
                   <input
                     type="text"
-                    placeholder="Diren adını gir..."
+                    placeholder="Gariban adını gir..."
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && handleLogin()}

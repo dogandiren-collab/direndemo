@@ -266,11 +266,11 @@ export const vibes = [
   },
 ];
 
-export const direnTitles: Record<string, { title: string; emoji: string; description: string }> = {
+export const garibanTitles: Record<string, { title: string; emoji: string; description: string }> = {
   'holding-on': {
     title: 'Holding On',
     emoji: '🤏',
-    description: 'Henüz tam diren değilsin ama yoldasın',
+    description: 'Henüz tam gariban değilsin ama yoldasın',
   },
   'orta-direk': {
     title: 'Orta Direk',
@@ -290,11 +290,11 @@ export const direnTitles: Record<string, { title: string; emoji: string; descrip
   'sefil-bilo': {
     title: 'Sefil Bilo',
     emoji: '👑',
-    description: 'Direnların kralı, mücadelenin şampiyonu',
+    description: 'Garibanların kralı, mücadelenin şampiyonu',
   },
 };
 
-export function getDirenTitle(score: number): string {
+export function getGaribanTitle(score: number): string {
   if (score <= 20) return 'holding-on';
   if (score <= 40) return 'orta-direk';
   if (score <= 60) return 'cay-dram';

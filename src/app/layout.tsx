@@ -11,12 +11,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Direndemo — Gerçek Diren Eşleşme Platformu",
-  description: "Bazıları zengin. Bazıları güzel. Bazıları sadece diren. Türkiye'nin ilk anti-dating, meme-powered sosyal eşleşme platformu.",
-  keywords: "diren, dating, eşleşme, türkiye, meme, sosyal, anti-dating",
+  title: "garibandan.com — Gerçek Gariban Eşleşme Platformu",
+  description: "Bazıları zengin. Bazıları güzel. Bazıları sadece gariban. Türkiye'nin ilk anti-dating, meme-powered sosyal eşleşme platformu.",
+  keywords: "gariban, dating, eşleşme, türkiye, meme, sosyal, anti-dating",
   openGraph: {
-    title: "Direndemo — Sen de Diren mısın?",
-    description: "Direnometre testini çöz, kaderini bul.",
+    title: "garibandan.com — Sen de Gariban mısın?",
+    description: "Garibanometre testini çöz, kaderini bul.",
     type: "website",
   },
   other: {

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getUser } from '@/utils/storage';
-import { direnTitles } from '@/data/questions';
+import { garibanTitles } from '@/data/questions';
 import RadarChart from '@/components/RadarChart';
 import { Share2, ArrowRight, Download, Sparkles, X } from 'lucide-react';
 import Link from 'next/link';
@@ -87,7 +87,7 @@ export default function ResultPage() {
   if (!user || !user.score) return null;
 
   const { score } = user;
-  const titleInfo = direnTitles[score.titleKey];
+  const titleInfo = garibanTitles[score.titleKey];
 
   return (
     <main className="relative min-h-[100dvh] bg-bg-dark overflow-x-hidden">
@@ -121,7 +121,7 @@ export default function ResultPage() {
             transition={{ delay: 0.3 }}
             className="text-sm tracking-[0.3em] uppercase text-dirty-gold/60 mb-4"
           >
-            Direnometre Sonucu
+            Garibanometre Sonucu
           </motion.div>
 
           {/* Score Ring */}
@@ -174,7 +174,7 @@ export default function ResultPage() {
           >
             {/* Radar Chart */}
             <div className="glass-card p-4 sm:p-6 flex flex-col items-center">
-              <h3 className="text-xs sm:text-sm font-medium text-text-secondary mb-3 sm:mb-4 tracking-wider uppercase">Diren Profili</h3>
+              <h3 className="text-xs sm:text-sm font-medium text-text-secondary mb-3 sm:mb-4 tracking-wider uppercase">Gariban Profili</h3>
               <RadarChart dimensions={score.dimensions} size={200} />
             </div>
 
@@ -201,12 +201,12 @@ export default function ResultPage() {
 
             {/* Dimension Bars */}
             <div className="glass-card p-4 sm:p-6">
-              <h3 className="text-sm font-medium text-text-secondary mb-4 tracking-wider uppercase">Diren Boyutları</h3>
+              <h3 className="text-sm font-medium text-text-secondary mb-4 tracking-wider uppercase">Gariban Boyutları</h3>
               <div className="space-y-4">
                 {[
                   { label: 'Finansal Mücadele', value: score.dimensions.financial, color: '#C4A35A', emoji: '💸' },
                   { label: 'Duygusal Hasar', value: score.dimensions.emotional, color: '#E84040', emoji: '💔' },
-                  { label: 'Sosyal Diren', value: score.dimensions.social, color: '#4A6B8A', emoji: '🫠' },
+                  { label: 'Sosyal Gariban', value: score.dimensions.social, color: '#4A6B8A', emoji: '🫠' },
                   { label: 'Mizah Seviyesi', value: score.dimensions.humor, color: '#5A9A5A', emoji: '😂' },
                   { label: 'Hayatta Kalma', value: score.dimensions.survival, color: '#D4845A', emoji: '🔥' },
                 ].map((dim, i) => (
@@ -232,7 +232,7 @@ export default function ResultPage() {
               </div>
             </div>
 
-            {/* ===== DIREN SERTIFIKASI ===== */}
+            {/* ===== GARIBAN SERTIFIKASI ===== */}
             <div className="glass-card p-6 sm:p-8 text-center relative overflow-hidden border-dirty-gold/20">
               {/* Decorative corners */}
               <div className="absolute top-2 left-2 w-6 h-6 border-t-2 border-l-2 border-dirty-gold/40 rounded-tl-lg" />
@@ -242,9 +242,9 @@ export default function ResultPage() {
 
               <div className="text-xs tracking-[0.3em] uppercase text-dirty-gold/50 mb-3">Sertifika</div>
               <div className="text-4xl mb-3">📜</div>
-              <h3 className="text-lg font-[var(--font-heading)] font-bold text-gradient-gold mb-1">Diren Sertifikası</h3>
+              <h3 className="text-lg font-[var(--font-heading)] font-bold text-gradient-gold mb-1">Gariban Sertifikası</h3>
               <p className="text-text-muted text-xs mb-4">Bu belge ile tasdik olunur ki,</p>
-              <div className="text-xl font-bold text-text-primary mb-1">{user.name || 'Diren'}</div>
+              <div className="text-xl font-bold text-text-primary mb-1">{user.name || 'Gariban'}</div>
               <div className="text-sm text-dirty-gold mb-3">{titleInfo.title} — {score.total}/100</div>
               <div className="flex flex-wrap justify-center gap-1 mb-4">
                 {score.auraTags.slice(0, 3).map((tag, i) => (
@@ -252,7 +252,7 @@ export default function ResultPage() {
                 ))}
               </div>
               <div className="text-[10px] text-text-muted">
-                direndemo.com • {new Date().toLocaleDateString('tr-TR')}
+                garibandan.com • {new Date().toLocaleDateString('tr-TR')}
               </div>
             </div>
 
@@ -321,7 +321,7 @@ export default function ResultPage() {
                 
                 {/* Content */}
                 <div className="relative z-10 flex flex-col items-center justify-center h-full p-8 text-center">
-                  <div className="text-xs tracking-[0.4em] uppercase text-dirty-gold/50 mb-6 font-bold">Direnometre</div>
+                  <div className="text-xs tracking-[0.4em] uppercase text-dirty-gold/50 mb-6 font-bold">Garibanometre</div>
                   
                   {/* Score */}
                   <div className="relative w-28 h-28 mx-auto mb-6">
@@ -353,8 +353,8 @@ export default function ResultPage() {
 
                   {/* Watermark */}
                   <div className="absolute bottom-8 left-0 right-0 text-center">
-                    <div className="text-sm font-[var(--font-heading)] font-bold text-gradient-gold mb-1">direndemo.com</div>
-                    <div className="text-[8px] text-text-muted tracking-wider">SEN DE DIREN MISIN? TESTE GİR</div>
+                    <div className="text-sm font-[var(--font-heading)] font-bold text-gradient-gold mb-1">garibandan.com</div>
+                    <div className="text-[8px] text-text-muted tracking-wider">SEN DE GARIBAN MISIN? TESTE GİR</div>
                   </div>
                 </div>
               </div>

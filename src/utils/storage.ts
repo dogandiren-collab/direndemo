@@ -1,11 +1,11 @@
-import { DirenScore } from './scoring';
+import { GaribanScore } from './scoring';
 
-const STORAGE_KEY = 'direndemo_user';
+const STORAGE_KEY = 'garibandan_user';
 
 export interface UserData {
   name: string;
   vibe: string | null;
-  score: DirenScore | null;
+  score: GaribanScore | null;
   isVip: boolean;
   completedOnboarding: boolean;
   completedTest: boolean;

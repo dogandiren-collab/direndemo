@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getUser } from '@/utils/storage';
-import { direnTitles, vibes } from '@/data/questions';
+import { garibanTitles, vibes } from '@/data/questions';
 import RadarChart from '@/components/RadarChart';
 import BottomNav from '@/components/BottomNav';
 import { Settings, Edit3, Sparkles, Music, Coffee, Heart, Zap, Moon, BookOpen, Plus, Trash2, Crown } from 'lucide-react';
@@ -63,7 +63,7 @@ export default function ProfilePage() {
   if (!user || !user.score) return null;
 
   const { score } = user;
-  const titleInfo = direnTitles[score.titleKey] || { title: 'Diren', emoji: '🫠', description: '' };
+  const titleInfo = garibanTitles[score.titleKey] || { title: 'Gariban', emoji: '🫠', description: '' };
   const userVibe = vibes.find((v) => v.id === user.vibe);
 
   const profileStats = [
@@ -150,7 +150,7 @@ export default function ProfilePage() {
           </div>
 
           <h2 className="text-2xl font-[var(--font-heading)] font-bold text-text-primary mb-1">
-            {user.name || 'Diren'}
+            {user.name || 'Gariban'}
           </h2>
 
           <div className="flex items-center justify-center gap-2 mb-2">
@@ -159,7 +159,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="flex items-center justify-center gap-4 text-xs text-text-muted">
-            <span>Diren Skoru: <span className="text-dirty-gold font-bold">{score.total}</span>/100</span>
+            <span>Gariban Skoru: <span className="text-dirty-gold font-bold">{score.total}</span>/100</span>
             {userVibe && <span>Vibe: <span className="text-text-secondary">{userVibe.title}</span></span>}
           </div>
         </motion.div>
@@ -242,7 +242,7 @@ export default function ProfilePage() {
           transition={{ delay: 0.4 }}
           className="glass-card p-5 mb-4 flex flex-col items-center"
         >
-          <h3 className="text-xs text-text-muted uppercase tracking-wider mb-2">Diren Profil Haritası</h3>
+          <h3 className="text-xs text-text-muted uppercase tracking-wider mb-2">Gariban Profil Haritası</h3>
           <RadarChart dimensions={score.dimensions} size={220} />
         </motion.div>
 
@@ -305,7 +305,7 @@ export default function ProfilePage() {
             {[
               { label: 'Finansal Mücadele', value: score.dimensions.financial, color: '#C4A35A' },
               { label: 'Duygusal Hasar', value: score.dimensions.emotional, color: '#E84040' },
-              { label: 'Sosyal Diren', value: score.dimensions.social, color: '#4A6B8A' },
+              { label: 'Sosyal Gariban', value: score.dimensions.social, color: '#4A6B8A' },
               { label: 'Mizah Kalkanı', value: score.dimensions.humor, color: '#5A9A5A' },
               { label: 'Hayatta Kalma', value: score.dimensions.survival, color: '#D4845A' },
             ].map((dim, i) => (
@@ -407,7 +407,7 @@ export default function ProfilePage() {
               </div>
               <div className="p-6 space-y-6">
                 <div>
-                  <label className="block text-xs font-bold text-text-muted uppercase tracking-wider mb-2">Diren İsmi</label>
+                  <label className="block text-xs font-bold text-text-muted uppercase tracking-wider mb-2">Gariban İsmi</label>
                   <input
                     type="text"
                     value={editName}

@@ -15,14 +15,14 @@ const titles = [
 ];
 
 const stats = [
-  { value: '847K', label: 'Diren Test Çözdü' },
+  { value: '847K', label: 'Gariban Test Çözdü' },
   { value: '2.3M', label: 'Çay İçildi' },
   { value: '156K', label: 'Kader Eşleşti' },
   { value: '∞', label: 'Duygusal Hasar' },
 ];
 
 const quotes = [
-  "\"Bazıları zengin. Bazıları güzel. Bazıları sadece diren.\"",
+  "\"Bazıları zengin. Bazıları güzel. Bazıları sadece gariban.\"",
   "\"Parayla saadet olmaz ama çaysız hiç olmaz.\"",
   "\"Gülümsüyorum ama içeride Müslüm Gürses çalıyor.\"",
   "\"Cüzdan boş, kalp kırık, aura full.\"",
@@ -84,7 +84,7 @@ export default function LandingPage() {
           transition={{ duration: 1.2, delay: 0.3, type: 'spring', stiffness: 100 }}
           className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-[var(--font-heading)] font-bold tracking-tight mb-6 sm:mb-8 text-glow-gold"
         >
-          <span className="text-gradient-gold">direndemo</span>
+          <span className="text-gradient-gold">garibandan.com</span>
         </motion.h1>
 
         {/* Tagline */}
@@ -145,7 +145,7 @@ export default function LandingPage() {
             >
               <span className="relative z-10 flex items-center gap-3">
                 <Sparkles size={24} />
-                Direnometreye Gir
+                Garibanometreye Gir
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-faded-orange via-dirty-gold to-ironic-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.button>
@@ -156,7 +156,7 @@ export default function LandingPage() {
             transition={{ delay: 2.5 }}
             className="text-center text-text-muted text-xs mt-4"
           >
-            ✨ 847,000+ diren teste girdi
+            ✨ 847,000+ gariban teste girdi
           </motion.p>
         </motion.div>
 
@@ -205,8 +205,8 @@ export default function LandingPage() {
 
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           {[
-            { icon: <Flame size={28} />, title: 'Vibrasyonunu Seç', desc: 'Duygusal kimliğini belirle. 8 farklı diren vibrasyonundan birini seç.', step: '01' },
-            { icon: <Zap size={28} />, title: 'Direnometre\'yi Çöz', desc: 'Finansal, duygusal ve sosyal diren seviyeni ölç. 0-100 arası puan al.', step: '02' },
+            { icon: <Flame size={28} />, title: 'Vibrasyonunu Seç', desc: 'Duygusal kimliğini belirle. 8 farklı gariban vibrasyonundan birini seç.', step: '01' },
+            { icon: <Zap size={28} />, title: 'Garibanometre\'yi Çöz', desc: 'Finansal, duygusal ve sosyal gariban seviyeni ölç. 0-100 arası puan al.', step: '02' },
             { icon: <Heart size={28} />, title: 'Kaderini Bul', desc: 'Duygusal uyum, mizah senkronizasyonu ve hayatta kalma enerjisiyle eşleş.', step: '03' },
           ].map((item, i) => (
             <motion.div
@@ -243,7 +243,7 @@ export default function LandingPage() {
             </div>
             <h2 className="text-3xl md:text-5xl font-[var(--font-heading)] font-bold mb-6">
               Şehrinin <br/>
-              <span className="text-gradient-gold">Diren Ligine</span> Katıl
+              <span className="text-gradient-gold">Gariban Ligine</span> Katıl
             </h2>
             <p className="text-text-secondary text-lg leading-relaxed mb-8">
               Sadece bireysel eşleşme değil, bölgesel bir varoluş mücadelesi. İstanbul'un stresli aurası mı, Ankara'nın gri melankolisi mi, İzmir'in rahatsız edici rahatlığı mı? Şehrini temsil et.
@@ -288,7 +288,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===== DIREN TITLES SHOWCASE ===== */}
+      {/* ===== GARIBAN TITLES SHOWCASE ===== */}
       <section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -296,7 +296,7 @@ export default function LandingPage() {
           viewport={{ once: true }}
           className="text-2xl sm:text-3xl md:text-5xl font-[var(--font-heading)] font-bold text-center mb-4"
         >
-          <span className="text-gradient-emotional">Diren Unvanları</span>
+          <span className="text-gradient-emotional">Gariban Unvanları</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -309,11 +309,11 @@ export default function LandingPage() {
 
         <div className="max-w-3xl mx-auto space-y-4">
           {[
-            { range: '0-20', title: 'Holding On', emoji: '🤏', desc: 'Henüz tam diren değilsin ama yoldasın', color: 'from-muted-blue/20 to-transparent' },
+            { range: '0-20', title: 'Holding On', emoji: '🤏', desc: 'Henüz tam gariban değilsin ama yoldasın', color: 'from-muted-blue/20 to-transparent' },
             { range: '20-40', title: 'Orta Direk', emoji: '⚖️', desc: 'Klasik Türk orta sınıfı mücadelesi', color: 'from-tv-green/20 to-transparent' },
             { range: '40-60', title: 'Çay & Dram Uzmanı', emoji: '🍵', desc: 'Çay ve drama hayatının iki direği', color: 'from-tea-brown/20 to-transparent' },
             { range: '60-80', title: 'Mahalle Protagonisti', emoji: '🎬', desc: 'Mahallenin ana karakteri sensin', color: 'from-faded-orange/20 to-transparent' },
-            { range: '80-100', title: 'Sefil Bilo', emoji: '👑', desc: 'Direnların kralı, mücadelenin şampiyonu', color: 'from-dirty-gold/20 to-transparent' },
+            { range: '80-100', title: 'Sefil Bilo', emoji: '👑', desc: 'Garibanların kralı, mücadelenin şampiyonu', color: 'from-dirty-gold/20 to-transparent' },
           ].map((item, i) => (
             <motion.div
               key={i}
@@ -367,10 +367,10 @@ export default function LandingPage() {
           <div className="text-6xl mb-6">🫠</div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-[var(--font-heading)] font-bold mb-6">
             <span className="text-text-primary">Sen de </span>
-            <span className="text-gradient-gold">diren mısın?</span>
+            <span className="text-gradient-gold">gariban mısın?</span>
           </h2>
           <p className="text-text-secondary text-lg mb-10 max-w-md mx-auto">
-            Direnometre testini çöz, duygusal kimliğini keşfet, kaderini bul.
+            Garibanometre testini çöz, duygusal kimliğini keşfet, kaderini bul.
           </p>
           <Link href="/onboarding">
             <motion.button
@@ -391,7 +391,7 @@ export default function LandingPage() {
       <footer className="relative z-10 py-8 px-6 border-t border-white/5 bg-bg-dark">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-text-muted">
-            © 2026 Direndemo. Tüm hakları diren.
+            © 2026 garibandan.com. Tüm hakları gariban.
           </div>
           <div className="flex gap-6 text-sm text-text-muted">
             <span className="hover:text-dirty-gold transition-colors cursor-pointer">Hakkında</span>

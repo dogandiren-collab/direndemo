@@ -1,4 +1,4 @@
-export interface DirenScore {
+export interface GaribanScore {
   total: number;
   dimensions: {
     financial: number;
@@ -11,7 +11,7 @@ export interface DirenScore {
   auraTags: string[];
 }
 
-export function calculateScore(answers: { questionId: number; score: number; category: string }[]): DirenScore {
+export function calculateScore(answers: { questionId: number; score: number; category: string }[]): GaribanScore {
   const totalPossible = answers.length * 35;
   const rawTotal = answers.reduce((sum, a) => sum + a.score, 0);
   const total = Math.round((rawTotal / totalPossible) * 100);
@@ -73,7 +73,7 @@ function generateAuraTags(total: number, fin: number, emo: number, soc: number):
   if (soc >= 60) tags.push('Sessiz Dram Aracısı');
 
   if (tags.length === 0) {
-    tags.push('Uyanmakta Olan Diren');
+    tags.push('Uyanmakta Olan Gariban');
     tags.push('Potansiyel Direk');
   }
 

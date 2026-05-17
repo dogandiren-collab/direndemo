@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { feedPosts, FeedPost } from '@/data/feedPosts';
-import { direnTitles } from '@/data/questions';
+import { garibanTitles } from '@/data/questions';
 import { Sparkles, MessageCircle, Share2, Plus, PenSquare } from 'lucide-react';
 import Link from 'next/link';
 import BottomNav from '@/components/BottomNav';
@@ -51,7 +51,7 @@ function FeedPostCard({ post, index }: { post: FeedPost; index: number }) {
             </span>
           </div>
           <div className="flex items-center gap-2 text-[10px] text-text-muted">
-            <span>Diren: {post.userScore}/100</span>
+            <span>Gariban: {post.userScore}/100</span>
             <span>•</span>
             <span>{post.timeAgo}</span>
           </div>
@@ -119,7 +119,7 @@ export default function FeedPage() {
       userName: 'Sen',
       userAvatar: '🫠',
       userScore: 99,
-      userTitle: 'Diren',
+      userTitle: 'Gariban',
       timeAgo: 'Şimdi',
       category: 'itiraf',
       content: newPostContent,
